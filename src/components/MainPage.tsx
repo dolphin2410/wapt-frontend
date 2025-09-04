@@ -31,10 +31,13 @@ export default function MainPage() {
         <div className="mp_container">
             <div className="mp_start_page_wrapper">
                 <div className="mp_title_card">
-                    <h1 className="mp_title upfont">
-                        Pigeon
+                    <h1 className="mp_title">
+                        <span className="illusion_pigeon illusion_pigeon_title">
+                            <div className="illusion_pigeon_illusion">iLLUsIon</div>
+                            <div className="illusion_pigeon_pigeon">Pigeon</div>
+                        </span>
                     </h1>
-                    <div className="mdownfont mp_title_desc">파일을 전달하는 <span className="upfont">21</span>세기 비둘기</div>
+                    <div className="mdownfont mp_title_desc mp_text_center">파일을 전달하는 <span className="supfont">21</span>세기 비둘기</div>
                 </div>
                 <div className="mp_button_group">
                     <div className="mp_action_btn_group">
@@ -45,53 +48,28 @@ export default function MainPage() {
                 </div>
             </div>
             <div className="mp_explanation_page_wrapper">
-                <h1 className="mp_explanation_topic_title upfont">Introduction</h1>
-                <div className="htu_container">
-                    <h2 id="whatisthis" onClick={() => clip("whatisthis")}># <span className="upfont">Pigeon</span></h2>
-                    <img src="/dove.png" width={300} alt="" />
-                    <div className="textAlignCenter">
-                        <h3 className="mdownfont"><span className="upfont">USB</span>가 없다고요<span className="upfont">? </span>비둘기에게 부탁해보세요<span className="upfont">!</span></h3>
+                <h1 className="mp_explanation_topic_title supfont">Introduction</h1>
+                <div className="mp_explanation_container">
+                    <div className="textAlignCenter mp_explanation_text" id="pigeon-text" data-left-text>
+                        <h3 className="mdownfont mp_text_wrap"><span className="supfont">USB</span>가 없다고요<span className="supfont">? </span>비둘기에게 부탁해보세요<span className="upfont">!</span></h3>
+                    </div>
+                    <img className="mp_explanation_img" id="pigeon" data-right-img src="/dove.png" width={300} alt="" />
+                    <br />
+                    <br />
+                </div>
+                <div className="mp_explanation_container">
+                    <img className="mp_explanation_img" id="saturn" data-left-img src="/saturn.png" width={300} alt="" />
+                    <div className="textAlignCenter mp_explanation_text" id="saturn-text" data-right-text>
+                        <h3 className="mdownfont mp_text_wrap">브라우저와 인터넷만 있다면 언제 어디서나<span className="supfont">!</span></h3>
                     </div>
                     <br />
                     <br />
                 </div>
-                <h1 className="mp_explanation_topic_title upfont">Features</h1>
-                <div className="htu_container">
-                    <h2 id="web" onClick={() => clip("web")}># <span className="upfont">Web</span></h2>
-                    <img src="/saturn.png" width={300} alt="" />
-                    <div className="textAlignCenter">
-                        <h3 className="mdownfont">브라우저와 인터넷만 있다면 언제 어디서나<span className="upfont">!</span></h3>
+                <div className="mp_explanation_container">
+                    <div className="textAlignCenter mp_explanation_text" id="clock-text" data-left-text>
+                        <h3 className="mdownfont mp_text_wrap">빠르고 안정적인 실시간 파일 공유<span className="supfont">!</span></h3>
                     </div>
-                    <br />
-                    <br />
-                </div>
-                <div className="htu_container">
-                    <h2 id="realtime" onClick={() => clip("realtime")}># <span className="upfont">Realtime</span></h2>
-                    <img src="/clock.png" width={220} alt="" />
-                    <div className="textAlignCenter">
-                        <h3 className="mdownfont"><span className="upfont">Google Firebase API</span>를 활용한 안정적인 실시간 파일 공유<span className="upfont">!</span></h3>
-                    </div>
-                    <br />
-                    <br />
-                </div>
-                <div className="htu_container">
-                    <h2 id="blockchain" onClick={() => clip("blockchain")}># <span className="upfont">Blockchain</span></h2>
-                    <img src="/chain.png" width={300} alt="" />
-                    <div className="textAlignCenter">
-                        <h3 className="mdownfont">블록체인 기술을 활용한 데이터 무결성 보장<span className="upfont">!</span></h3>
-                    </div>
-                    <br />
-                    <br />
-                </div>
-                <h1 className="mp_explanation_topic_title upfont">Open Source</h1>
-                <div className="htu_container">
-                    <h2 id="sponsor" onClick={() => clip("sponsor")}># <span className="upfont">Sponsor</span></h2>
-                    <div className="textAlignCenter">
-                        <h3 className="mdownfont">비둘기에게 밥을 나누어 주시는 것은 어떤가요<span className="upfont">?</span></h3>
-                        <br />
-                        <a href="https://www.buymeacoffee.com/dolphin2410" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/arial-blue.png" alt="Buy Me A Coffee" style={{height: '40px', width: '150px'}} /></a>
-                        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="dolphin2410" data-color="#5F7FFF" data-emoji="" data-font="Arial" data-text="Feed Pigeon" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
-                    </div>
+                    <img className="mp_explanation_img" id="clock" data-right-img src="/clock.png" width={280} alt="" />
                     <br />
                     <br />
                 </div>

@@ -5,7 +5,7 @@ import BottomFooter from "./components/BottomFooter";
 function applyDarkMode() {
   const scrollY = window.scrollY;
 
-  if (scrollY != 0) {
+  if (scrollY > 60) {
     document.querySelector(".navbar")?.classList.add("darknav")
     document.querySelector(".navbar-menu-expanded")?.classList.add("darknav-expanded")
     document.querySelector(".navbar-burger")?.classList.add("darknav-burger")

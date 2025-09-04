@@ -16,11 +16,18 @@
 
     top: 0;
     z-index: 2;
+
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 50%, rgb(40,44,44) 50%) bottom;
+    background-size: 100% 200%;
+    background-position: bottom;
+    transition: background-position 0.3s linear, color 0.3s linear;
+
 }
 
 .darknav {
-    background-color: rgb(40,44,44) !important;
-    color: white;
+    /* background-color: rgb(40,44,44) !important; */
+    color: white !important;
+    background-position: top;
 }
 
 .darknav-expanded {
@@ -154,4 +161,28 @@
 
 .navbar-menu-expanded > .navbar-menu-help:hover {
     background-color: #e9e9e9;
+}
+
+.illusion_pigeon {
+    font-size: 1.2rem !important;
+    font-weight: bolder;
+}
+
+.darknav .illusion_pigeon_illusion {
+    color: rgb(255, 255, 255) !important;
+}
+
+.illusion_pigeon > * {
+    display: block;
+    text-align: center;
+}
+
+.illusion_pigeon_illusion {
+    color: rgb(78, 78, 78);
+    transform: scale(0.8);
+    transition: color 0.3s linear;
+}
+
+.illusion_pigeon_pigeon {
+    transform: scale(1.3);
 }
